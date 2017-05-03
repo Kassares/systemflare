@@ -1,0 +1,493 @@
+/*  =========== color variables ===========  */
+/*  =========== fonts ===========  */
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../vendor/fonts/open-sans-bold.ttf); }
+
+@media screen and (max-width: 480px) {
+  body section h1 {
+    font-size: 1.6em !important; }
+  body section h2 {
+    font-size: 1.2em !important;
+    padding: 0 8% !important; }
+  body .top .logo {
+    width: 130px; }
+  body .top .calltoaction {
+    margin-top: -3px !important; }
+  body header {
+    background: url(../img/header-min.png) !important; }
+    body header .layer-dark h1 {
+      font: 1em "OpenSansBold";
+      margin: 0px;
+      margin-top: 130px; }
+    body header .layer-dark p {
+      font: 0.9em 'Open Sans', sans-serif;
+      margin-top: 30px;
+      padding: 0px 4%; }
+    body header .layer-dark button {
+      margin-top: 50px; }
+  body .features .col-md-4:last-child {
+    margin-bottom: 50px; }
+  body .clients {
+    background: url(../img/clients-min.png);
+    background-size: 100%; }
+    body .clients .outsourcing {
+      margin-bottom: 70px; }
+  body .technologies {
+    background: url(../img/technologies-min.png);
+    background-size: 100%; } }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important; }
+
+.status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/loading.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px; }
+
+.centered {
+  margin: auto;
+  padding: 0; }
+
+.calltoaction {
+  height: 40px;
+  color: #fff;
+  background: #e96656;
+  font-size: 18px;
+  width: 140px;
+  height: 35px;
+  margin: 17px 0px;
+  text-align: center;
+  padding-top: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  .calltoaction:hover {
+    background-color: #b13c2e;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none; }
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif; }
+  body .top {
+    padding-top: 30px;
+    width: 100%;
+    height: 70px;
+    margin-bottom: -68px; }
+    body .top .logo {
+      max-width: 200px;
+      float: left;
+      fill: #ffb600;
+      margin-top: -15px; }
+      body .top .logo img {
+        max-width: 100%;
+        height: auto; }
+    body .top .calltoaction {
+      height: 40px;
+      color: #fff;
+      background: #e96656;
+      font-size: 18px;
+      float: right;
+      width: 140px;
+      height: 35px;
+      margin: 17px 0px;
+      text-align: center;
+      padding-top: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      body .top .calltoaction:hover {
+        background-color: #b13c2e;
+        text-decoration: none; }
+  body .layer-dark {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%; }
+  body header {
+    background: transparent;
+    background-size: 100%;
+    height: auto;
+    width: 100%; }
+    body header h1 {
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      font: 30px "OpenSansBold";
+      color: #fff;
+      margin: 70px;
+      margin-top: 200px;
+      line-height: 1.6; }
+    body header p {
+      color: #fff;
+      text-align: center;
+      font: 25px 'Open Sans', sans-serif;
+      margin-top: 100px;
+      padding: 0px 14%; }
+    body header .header-button {
+      display: inherit;
+      color: #fff;
+      background: transparent;
+      font: 18px 'Open Sans';
+      font-weight: 300;
+      width: 180px;
+      height: 45px;
+      margin: 0px auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      text-align: center;
+      padding: 0px 17px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px;
+      border: 4px solid #fff;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      body header .header-button:hover {
+        background-color: #b13c2e;
+        text-decoration: none; }
+  body .technologies .layer-dark {
+    padding-top: 40px; }
+  body .technologies h1 {
+    color: #fff;
+    font: 38px 'Open Sans';
+    font-weight: 300;
+    text-align: center; }
+  body .technologies h2 {
+    color: #fff;
+    font: 30px 'Open Sans';
+    padding: 0px 15%;
+    text-align: center; }
+  body .technologies i {
+    color: #b7cbf3;
+    font-size: 80px;
+    margin: 0 auto;
+    display: table;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+    body .technologies i:hover {
+      color: #4b7de1; }
+  body .features {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-bottom: 80px; }
+    body .features .features-cell {
+      -webkit-transition: 1s;
+      transition: 1s; }
+      body .features .features-cell:hover {
+        background: #4570ff; }
+    body .features h1 {
+      font: 38px 'Open Sans';
+      font-weight: 300;
+      margin-top: 40px;
+      text-align: center; }
+    body .features h2 {
+      font: 30px 'Open Sans';
+      padding: 0px 6%;
+      text-align: center; }
+    body .features a {
+      text-align: center;
+      color: #4570ff;
+      font-size: 18px;
+      display: inherit;
+      margin-top: 20px; }
+    body .features img {
+      max-height: 100px;
+      margin: 0 auto;
+      display: inherit;
+      margin-top: 80px; }
+  body .clients {
+    width: 100%;
+    height: auto; }
+    body .clients .layer-clients {
+      padding-top: 40px;
+      padding-bottom: 50px;
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%; }
+      body .clients .layer-clients h1 {
+        font: 38px 'Open Sans';
+        font-weight: 300;
+        text-align: center;
+        color: #fff; }
+      body .clients .layer-clients h2 {
+        font: 28px 'Open Sans';
+        padding: 0px 20%;
+        text-align: center;
+        color: #fff; }
+    body .clients .kinds-clients p {
+      color: #fff;
+      font: 30px 'Open Sans';
+      text-align: center;
+      margin-top: 20px; }
+    body .clients .kinds-clients a {
+      color: #52c0ee;
+      text-align: center;
+      font: 24px 'Open Sans';
+      display: inherit;
+      text-decoration: underline;
+      cursor: pointer; }
+    body .clients .kinds-clients .ecommerce {
+      -webkit-transition: 1s;
+      transition: 1s; }
+      body .clients .kinds-clients .ecommerce img {
+        display: inherit;
+        margin: 0 auto;
+        margin-top: 74px; }
+      body .clients .kinds-clients .ecommerce ul {
+        display: none;
+        color: #fff;
+        text-align: center;
+        list-style: none;
+        padding-top: 100px;
+        padding-bottom: 30px; }
+        body .clients .kinds-clients .ecommerce ul li {
+          padding-top: 10px; }
+    body .clients .kinds-clients .designers {
+      -webkit-transition: 1s;
+      transition: 1s; }
+      body .clients .kinds-clients .designers img {
+        display: inherit;
+        margin: 0 auto;
+        margin-top: 66px; }
+      body .clients .kinds-clients .designers ul {
+        display: none;
+        color: #fff;
+        text-align: center;
+        list-style: none;
+        padding-top: 100px;
+        padding-bottom: 30px; }
+        body .clients .kinds-clients .designers ul li {
+          padding-top: 10px; }
+    body .clients .kinds-clients .marketing img {
+      display: inherit;
+      margin: 0 auto;
+      margin-top: 75px; }
+    body .clients .kinds-clients .marketing ul {
+      display: none;
+      color: #fff;
+      text-align: center;
+      list-style: none;
+      padding-top: 100px;
+      padding-bottom: 30px; }
+      body .clients .kinds-clients .marketing ul li {
+        padding-top: 10px; }
+    body .clients .kinds-clients .outsourcing img {
+      display: inherit;
+      margin: 0 auto;
+      margin-top: 80px; }
+    body .clients .kinds-clients .outsourcing ul {
+      display: none;
+      color: #fff;
+      text-align: center;
+      list-style: none;
+      padding-top: 100px;
+      padding-bottom: 30px; }
+      body .clients .kinds-clients .outsourcing ul li {
+        padding-top: 10px; }
+  body .plans {
+    height: auto;
+    background-image: url("../img/computer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px; }
+    body .plans .plan-title h1 {
+      text-align: center;
+      color: #fff;
+      margin-top: 0px;
+      font-weight: 300; }
+    body .plans .container .col-md-4 {
+      padding: 10px; }
+      body .plans .container .col-md-4 .plan-standart {
+        margin-top: 50px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px; }
+        body .plans .container .col-md-4 .plan-standart .plan-header {
+          padding: 20px 0px;
+          height: auto;
+          background: #7baa34; }
+          body .plans .container .col-md-4 .plan-standart .plan-header .plan-name {
+            color: #fff;
+            font-size: 1.875em;
+            text-align: center;
+            margin: 0 auto;
+            display: inherit;
+            font-weight: 300; }
+          body .plans .container .col-md-4 .plan-standart .plan-header .price {
+            font-size: 2.25em;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            display: inherit;
+            font-weight: 300; }
+        body .plans .container .col-md-4 .plan-standart .plan-ul {
+          background: #eee; }
+          body .plans .container .col-md-4 .plan-standart .plan-ul ul {
+            list-style: none;
+            padding: 30px 0px;
+            height: 300px;
+            margin-bottom: 0px; }
+            body .plans .container .col-md-4 .plan-standart .plan-ul ul li {
+              list-style: none;
+              text-align: center;
+              font-size: 0.9em;
+              padding-top: 5px; }
+    body .plans .container .col-md-4 {
+      padding: 10px; }
+      body .plans .container .col-md-4 .plan-base {
+        margin-top: 50px; }
+        body .plans .container .col-md-4 .plan-base .plan-header {
+          padding: 20px 0px;
+          height: auto;
+          background: #353535; }
+          body .plans .container .col-md-4 .plan-base .plan-header .plan-name {
+            color: #fff;
+            font-size: 1.875em;
+            text-align: center;
+            margin: 0 auto;
+            display: inherit;
+            font-weight: 300; }
+          body .plans .container .col-md-4 .plan-base .plan-header .price {
+            font-size: 2.25em;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            display: inherit;
+            font-weight: 300; }
+        body .plans .container .col-md-4 .plan-base .plan-ul {
+          background: #eee; }
+          body .plans .container .col-md-4 .plan-base .plan-ul ul {
+            list-style: none;
+            padding: 30px 0px;
+            height: 300px;
+            margin-bottom: 0px; }
+            body .plans .container .col-md-4 .plan-base .plan-ul ul li {
+              list-style: none;
+              text-align: center;
+              font-size: 0.9em;
+              padding-top: 5px; }
+    body .plans .container .col-md-4 {
+      padding: 10px; }
+      body .plans .container .col-md-4 .plan-business {
+        margin-top: 50px; }
+        body .plans .container .col-md-4 .plan-business .plan-header {
+          padding: 20px 0px;
+          height: auto;
+          background: #db6532; }
+          body .plans .container .col-md-4 .plan-business .plan-header .plan-name {
+            color: #fff;
+            font-size: 1.875em;
+            text-align: center;
+            margin: 0 auto;
+            display: inherit;
+            font-weight: 300; }
+          body .plans .container .col-md-4 .plan-business .plan-header .price {
+            font-size: 2.25em;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            display: inherit;
+            font-weight: 300; }
+        body .plans .container .col-md-4 .plan-business .plan-ul {
+          background: #eee; }
+          body .plans .container .col-md-4 .plan-business .plan-ul ul {
+            padding: 30px 0px;
+            list-style: none;
+            height: 300px;
+            margin-bottom: 0px; }
+            body .plans .container .col-md-4 .plan-business .plan-ul ul li {
+              list-style: none;
+              text-align: center;
+              font-size: 0.9em;
+              padding-top: 5px; }
+  body .testimonials h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-size: 38px; }
+  body .testimonials h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 13%; }
+  body .testimonials .test-photo1 {
+    width: 200px;
+    background: url(../img/testimonial/test-1.jpg);
+    background-size: cover;
+    border: 0px solid transparent;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    height: 200px;
+    margin: 60px auto; }
+  body .testimonials .test-photo2 {
+    width: 200px;
+    background: url(../img/testimonial/test-2.jpg);
+    background-size: cover;
+    border: 0px solid transparent;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    height: 200px;
+    margin: 60px auto; }
+  body .testimonials .test-photo3 {
+    width: 200px;
+    background: url(../img/testimonial/test-3.jpg);
+    background-size: cover;
+    border: 0px solid transparent;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    height: 200px;
+    margin: 60px auto; }
+  body .testimonials .testimonial-wrapper h5 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #b13c2e; }
+  body .testimonials .testimonial-wrapper .profession {
+    color: #b13c2e;
+    margin-bottom: 0px; }
+  body .testimonials .testimonial-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+    font-size: 0.9em;
+    text-align: center; }
+  body footer {
+    width: 100%;
+    height: auto;
+    background: #272722;
+    padding: 60px 0px; }
+    body footer p {
+      color: #939393;
+      text-align: center;
+      -webkit-transition: color 0.7s;
+      transition: color 0.7s; }
+      body footer p:hover {
+        color: #e96656; }
+
+.features_text.active {
+  display: block !important;
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  background: #fff; }
+
+.hidden_features {
+  padding: 50px 0px; }

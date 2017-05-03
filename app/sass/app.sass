@@ -1,0 +1,483 @@
+@import 'variables'
+@import 'mixins'
+@import 'fonts'
+@import 'media'
+
+.preloader 
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #fefefe
+    z-index: 99999
+    height: 100%
+    width: 100%
+    overflow: hidden !important
+
+.status 
+    width: 200px
+    height: 200px
+    position: absolute
+    left: 50%
+    top: 50%
+    background-image: url(../img/loading.gif)
+    background-repeat: no-repeat
+    background-position: center
+    margin: -100px 0 0 -100px
+.centered 
+	margin: auto
+	padding: 0
+	
+.calltoaction 
+	height: 40px
+	color: #fff
+	background: $button
+	font-size: 18px 
+	width: 140px
+	height: 35px
+	margin: 17px 0px
+	text-align: center
+	padding-top: 5px
+	border-radius: 5px
+	&:hover 
+		background-color: #b13c2e 
+		transition: 0.5s
+		text-decoration: none
+			
+body
+	background-color: #fff
+	font-size: 16px
+	font-family: 'Open Sans', sans-serif
+	.top
+		padding-top: 30px
+		width: 100%
+		height: 70px
+		margin-bottom: -68px
+		.logo 
+			max-width: 200px
+			float: left
+			fill: #ffb600
+			margin-top: -15px
+			img
+				max-width: 100%
+				height: auto
+				
+		.calltoaction 
+			height: 40px
+			color: #fff
+			background: $button
+			font-size: 18px 
+			float: right
+			width: 140px
+			height: 35px
+			margin: 17px 0px
+			text-align: center
+			padding-top: 5px
+			border-radius: 5px
+			transition: 0.5s
+			&:hover 
+				background-color: #b13c2e 
+				
+				text-decoration: none
+	.layer-dark
+		background: rgba(0, 0, 0, 0.6)
+		height: 100%
+	header
+		background: transparent
+		//background: url(../img/computer-bg.jpg) no-repeat
+		//background-clip: padding-box 
+		-webkit-background-size: 100%
+		background-size: 100%
+		height: auto
+		width: 100%
+		h1 
+			font-weight: 700
+			text-transform: uppercase
+			text-align: center
+			font: 30px $osbold
+			color: #fff
+			margin: 70px
+			margin-top: 200px
+			line-height: 1.6
+		p 
+			color: #fff
+			text-align: center
+			font: 25px 'Open Sans', sans-serif
+			margin-top: 100px
+			padding: 0px 14%
+		.header-button 
+			display: inherit
+			color: #fff
+			background: transparent
+			font: 18px 'Open Sans'
+			font-weight: 300
+			width: 180px
+			height: 45px
+			margin: 0px auto
+			margin-top: 100px
+			margin-bottom: 100px
+			text-align: center
+			padding: 0px 17px
+			border-radius: 7px
+			border: 4px solid #fff
+			transition: 0.5s
+			&:hover 
+				background-color: #b13c2e 
+				
+				text-decoration: none
+			
+	.technologies
+		.layer-dark
+			padding-top: 40px
+		h1 
+			color: #fff
+			font: 38px 'Open Sans'
+			font-weight: 300
+			text-align: center
+		h2 
+			color: #fff
+			font: 30px 'Open Sans'
+			padding: 0px 15%
+			text-align: center
+		i
+			color: #b7cbf3
+			font-size: 80px
+			margin: 0 auto
+			display: table
+			margin-top: 30px
+			margin-bottom: 50px
+			transition: 0.7s
+			&:hover 
+				color: #4b7de1
+	.features
+		width: 100%
+		height: auto
+		background: #fff
+		padding-bottom: 80px
+		.features-cell
+			transition: 1s
+			&:hover 
+				background: #4570ff
+		h1 
+			font: 38px 'Open Sans'
+			font-weight: 300
+			margin-top: 40px
+			text-align: center
+		h2 
+			font: 30px 'Open Sans'
+			padding: 0px 6%
+			text-align: center
+		a
+			text-align: center
+			color: #4570ff
+			font-size: 18px
+			display: inherit
+			margin-top: 20px
+		img
+			max-height: 100px
+			margin: 0 auto
+			display: inherit
+			margin-top: 80px
+			
+	.clients 
+		width: 100%
+		height: auto
+		// height: 627px
+		// background: url(../img/clients.png) no-repeat
+		// background-size: 100%
+		.layer-clients
+			padding-top: 40px
+			padding-bottom: 50px
+			background: rgba(0,0,0, 0.8)
+			width: 100%
+			height: 100%
+			h1 
+				font: 38px 'Open Sans'
+				font-weight: 300
+				text-align: center
+				color: #fff
+			h2 
+				font: 28px 'Open Sans'
+				padding: 0px 20%
+				text-align: center
+				color: #fff
+		.kinds-clients
+			p
+				color: #fff
+				font: 30px 'Open Sans'
+				text-align: center
+				margin-top: 20px
+			a
+				color: #52c0ee
+				text-align: center
+				font: 24px 'Open Sans'
+				display: inherit
+				text-decoration: underline
+				cursor: pointer
+			.ecommerce 
+				transition: 1s
+				img
+					display: inherit
+					margin: 0 auto
+					margin-top: 74px
+				ul
+					display: none
+					color: #fff
+					text-align: center
+					list-style: none
+					padding-top: 100px
+					padding-bottom: 30px
+					li
+						padding-top: 10px
+				// &:hover 
+				// 	img,p,a
+				// 		display: none
+				// 		opacity: 0
+				// 	ul
+				// 		display: block
+				// 		opacity: 1
+			.designers
+				transition: 1s
+				img
+					display: inherit
+					margin: 0 auto
+					margin-top: 66px
+				ul
+					display: none
+					color: #fff
+					text-align: center
+					list-style: none
+					padding-top: 100px
+					padding-bottom: 30px
+					li
+						padding-top: 10px
+			.marketing 
+				img
+					display: inherit
+					margin: 0 auto
+					margin-top: 75px
+				ul
+					display: none
+					color: #fff
+					text-align: center
+					list-style: none
+					padding-top: 100px
+					padding-bottom: 30px
+					li
+						padding-top: 10px
+			.outsourcing 
+				img
+					display: inherit
+					margin: 0 auto
+					margin-top: 80px
+				ul
+					display: none
+					color: #fff
+					text-align: center
+					list-style: none
+					padding-top: 100px
+					padding-bottom: 30px
+					li
+						padding-top: 10px
+	.plans
+		height: auto
+		background-image: url("../img/computer-bg.jpg")
+		background-size: cover
+		background-repeat: no-repeat
+		.plan-title
+			h1 
+				text-align: center
+				color: #fff
+				margin-top: 0px
+				font-weight: 300
+		padding: 100px 0px
+		.container
+			// width: 940px
+			.col-md-4
+				padding: 10px
+				.plan-standart
+					//margin-left: 10px
+					margin-top: 50px
+					border-radius: 10px
+					.plan-header
+						padding: 20px 0px
+						height: auto
+						background: #7baa34
+						
+						.plan-name 
+							color: #fff
+							font-size: 1.875em
+							text-align: center
+							margin: 0 auto
+							display: inherit
+							font-weight: 300
+						.price
+							font-size: 2.25em
+							color: #fff
+							text-align: center
+							padding-top: 20px
+							display: inherit
+							font-weight: 300
+					.plan-ul
+						background: #eee
+						ul
+							list-style: none
+							padding: 30px 0px
+							height: 300px
+							margin-bottom: 0px
+							li
+								list-style: none
+								text-align: center
+								font-size: 0.9em
+								padding-top: 5px
+			.col-md-4
+				padding: 10px
+				.plan-base
+					//margin-left: 10px
+					margin-top: 50px
+					.plan-header
+						padding: 20px 0px
+						height: auto
+						background: #353535
+						
+						.plan-name 
+							color: #fff
+							font-size: 1.875em
+							text-align: center
+							margin: 0 auto
+							display: inherit
+							font-weight: 300
+						.price
+							font-size: 2.25em
+							color: #fff
+							text-align: center
+							padding-top: 20px
+							display: inherit
+							font-weight: 300
+					.plan-ul
+						background: #eee
+						ul
+							list-style: none
+							padding: 30px 0px
+							height: 300px
+							margin-bottom: 0px
+							li
+								list-style: none
+								text-align: center
+								font-size: 0.9em
+								padding-top: 5px
+			.col-md-4
+				padding: 10px
+				.plan-business
+					//margin-left: 10px
+					margin-top: 50px
+					.plan-header
+						padding: 20px 0px
+						height: auto
+						background: #db6532
+						
+						.plan-name 
+							color: #fff
+							font-size: 1.875em
+							text-align: center
+							margin: 0 auto
+							display: inherit
+							font-weight: 300
+						.price
+							font-size: 2.25em
+							color: #fff
+							text-align: center
+							padding-top: 20px
+							display: inherit
+							font-weight: 300
+					.plan-ul
+						background: #eee
+						ul
+							padding: 30px 0px
+							list-style: none
+							height: 300px
+							margin-bottom: 0px
+							li
+								list-style: none
+								text-align: center
+								font-size: 0.9em
+								padding-top: 5px
+	.testimonials
+		h1
+			text-align: center
+			margin-top: 60px
+			margin-bottom: 30px
+			font-weight: 200
+			font-size: 38px
+		h2 
+			text-align: center
+			font-size: 30px
+			padding: 0px 13%
+		.test-photo1
+			width: 200px
+			background: url(../img/testimonial/test-1.jpg)
+			background-size: cover
+			border: 0px solid transparent
+			border-radius: 100px
+			height: 200px
+			margin: 60px auto
+		.test-photo2
+			width: 200px
+			background: url(../img/testimonial/test-2.jpg)
+			background-size: cover
+			border: 0px solid transparent
+			border-radius: 100px
+			height: 200px
+			margin: 60px auto
+		.test-photo3
+			width: 200px
+			background: url(../img/testimonial/test-3.jpg)
+			background-size: cover
+			border: 0px solid transparent
+			border-radius: 100px
+			height: 200px
+			margin: 60px auto
+		.testimonial-wrapper
+			h5 
+				text-align: center
+				font-size: 1.3em
+				font-weight: 700
+				color: #b13c2e
+			.profession
+				color: #b13c2e
+				margin-bottom: 0px
+			p
+				margin-top: 20px
+				margin-bottom: 50px
+				padding: 0px 20px
+				font-size: 0.9em
+				text-align: center
+	footer
+		width: 100%
+		height: auto
+		background: #272722
+		padding: 60px 0px
+		p
+			color: #939393
+			text-align: center
+			transition: color 0.7s
+			&:hover 
+				color: #e96656
+				
+				
+				
+				
+				
+				
+				
+				//test
+				
+.features_text.active
+	display: block !important
+	width: 100%
+	height: auto
+	padding: 100px
+	background: #fff
+.hidden_features 
+	padding: 50px 0px

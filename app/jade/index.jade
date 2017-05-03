@@ -1,0 +1,236 @@
+doctype html
+html
+	head
+		title SystemFlare
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Comcdpatible', content='IE=edge')
+		meta(name='description', content='')
+		meta(name='author', content='')
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i,800&amp;subset=cyrillic", rel="stylesheet")
+		link(rel="stylesheet", href="./vendor/styles/bootstrap.css")
+		link(rel="stylesheet", href="./vendor/styles/font-awesome.min.css")
+		link(rel="stylesheet", href="./css/app.css")
+		link(rel="stylesheet", href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css")
+		link(rel="stylesheet", href="./vendor/styles/animate.css")
+		link(rel="icon", href="https://systemflare.com/wp-content/uploads/2016/10/favicon-1.png", sizes="32x32")
+	body
+		.preloader
+			.status
+		section.top
+			.container
+				.logo
+					img(src='img/logo.svg')
+				a.calltoaction.smoothscroll(href='#plans') Заказать
+					
+				
+		header.parallax-window(data-parallax="scroll", data-image-src="../img/header.png")
+			.layer-dark
+				.container
+					h1.wow.fadeInUp(data-wow-delay="1s", data-wow-duration="1s") Профессиональное системное администрирование интернет ресурсов по подписке
+					p Мы обеспечиваем работу бизнеса наших клиентов в интернете. Вы строите бизнес, мы обеспечиваем инфраструктуру. 
+					button.header-button.smoothscroll(href='#features') Узнать больше
+		section.features#features
+			.container
+				h1 ВОЗМОЖНОСТИ
+				h2 Построим новую и инфаструктуру или оптимизируем существующую
+				.row
+					.col-md-4.col-sm-4.features-cell
+						img(src="img/websites.png")
+						a Websites
+					.col-md-4.col-sm-4
+						img(src="img/backup.png")
+						a Backup and Recovery
+					.col-md-4.col-sm-4
+						img(src="img/archiving.png")
+						a Archiving
+					.col-md-4.col-sm-4
+						img(src="img/devops.png")
+						a DevOps
+					.col-md-4.col-sm-4
+						img(src="img/bigdata.png")
+						a Big Data
+					.col-md-4.col-sm-4
+						img(src="img/computing.png")
+						a Serverless Computing
+		section.clients.parallax-window(data-parallax="scroll", data-image-src="../img/clients.png")
+			.layer-clients
+				h1 КОМУ ЭТО НУЖНО
+				h2 Мы знаем особенности бизнеса наших клиентов изнутри
+				.container
+					.row.kinds-clients
+						.col-md-3.ecommerce
+							img(src='img/ecommerce.png')
+							p Интернет магазин web сайт
+							a.clients-detail Подробнее
+							ul
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+						.col-md-3.designers
+							img(src='img/designers.png')
+							p Студия web дизайна
+							a.clients-detail Подробнее
+							ul
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+						.col-md-3.marketing
+							img(src='img/marketing.png')
+							p Online маркетинг SEO, PPC, SMM
+							a.clients-detail Подробнее
+							ul
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+						.col-md-3.outsourcing
+							img(src='img/outsourcing.png')
+							p Outsourcing web, mobile
+							a.clients-detail Подробнее
+							ul
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+								li Lorem Ipsum
+		section.testimonials
+			.container
+				h1 ОТЗЫВЫ КЛИЕНТОВ
+				h2 Десятки компаний доверили SystemFlare заботу о сетевой инфраструктуре
+				.row
+					.col-md-4
+						.testimonial-wrapper.wow.fadeInRight(data-wow-delay="0s", data-wow-duration="1.5s", data-wow-offset="240")
+							.test-photo1
+							h5 Дарт Вейдерович
+							p.profession Пиар-менеджер
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dicta soluta accusantium deleniti facere suscipit laudantium. Totam, qui esse sit accusantium porro illum tempore molestiae cupiditate libero dolorem nihil nesciunt.
+					.col-md-4
+						.testimonial-wrapper.wow.fadeInRight(data-wow-delay="0s", data-wow-duration="1.5s", data-wow-offset="240")
+							.test-photo2
+							h5 Иван Иванов
+							p.profession Маркетолог
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dicta soluta accusantium deleniti facere suscipit laudantium. Totam, qui esse sit accusantium porro illum tempore molestiae cupiditate libero dolorem nihil nesciunt.
+					.col-md-4
+						.testimonial-wrapper.wow.fadeInRight(data-wow-delay="0s", data-wow-duration="1.5s", data-wow-offset="240")
+							.test-photo3
+							h5 Лена Головач
+							p.profession HumanResources
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dicta soluta accusantium deleniti facere suscipit laudantium. Totam, qui esse sit accusantium porro illum tempore molestiae cupiditate libero dolorem nihil nesciunt.
+
+		section.technologies.parallax-window(data-parallax="scroll", data-image-src="../img/technologies.png")
+			.layer-dark
+				h1 ТЕХНОЛОГИИ
+				h2 Наши специалисты работают с самыми современными технологиями построения сетей
+				.container
+					.row
+						.col-md-3.col-sm-3
+							i.devicon-rails-plain-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-python-plain
+						.col-md-3.col-sm-3
+							i.devicon-php-plain
+						.col-md-3.col-sm-3
+							i.devicon-java-plain-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-dot-net-plain-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-nodejs-plain
+						.col-md-3.col-sm-3
+							i.devicon-mysql-plain-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-git-plain-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-apache-line-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-ubuntu-plain-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-redis-plain-wordmark
+						.col-md-3.col-sm-3
+							i.devicon-debian-plain-wordmark
+							
+		section.plans#plans 
+			.plan-title
+				h1 ТАРИФНЫЕ ПЛАНЫ
+			.container
+				.row
+					.col-md-4.col-sm-6.col-sm-offset-3.col-md-offset-0
+						.plan-standart
+							.plan-header
+								span.plan-name Базовый
+								span.price 50$
+							.plan-ul
+								ul
+									li Оптимизация базы данных
+									li Поиск и устранение rootkit, malware, botnet node	
+									li Консультация
+									li Хостинг
+									li Поддержка
+									li Защита от DDos
+									li Оптимизация скорости
+					.col-md-4.col-sm-6.col-sm-offset-3.col-md-offset-0
+						.plan-base
+							.plan-header
+								span.plan-name Стандартный
+								span.price 100$
+							.plan-ul
+								ul
+									li Оптимизация базы данных
+									li Поиск и устранение rootkit, malware, botnet node	
+									li Консультация
+									li Хостинг
+									li Поддержка
+									li Защита от DDos
+									li Оптимизация скорости
+					.col-md-4.col-sm-6.col-sm-offset-3.col-md-offset-0
+						.plan-business
+							.plan-header
+								span.plan-name Бизнес
+								span.price 200$
+							.plan-ul
+								ul
+									li Оптимизация базы данных
+									li Поиск и устранение rootkit, malware, botnet node	
+									li Консультация
+									li Хостинг
+									li Поддержка
+									li Защита от DDos
+									li Оптимизация скорости
+					
+		footer
+			.container
+				.col-md-3
+					p Terminal 42, Odessa, Ukraine
+				.col-md-3
+					p sales@systemflare.com
+				.col-md-3
+					p +38 06 34 34 34 16
+				.col-md-3
+					p SystemFlare
+		script(src='./vendor/scripts/jquery.min.js')
+		script(src='./vendor/scripts/wow.min.js')
+		script.
+			if(document.body.clientWidth>768)
+				document.write('<script src=./js/parallax.js>')
+		script.
+			if(document.body.clientWidth>768)
+				document.write('<script src=./js/animate-css.js>')
+		script.
+			new WOW().init();
+		script(src='./vendor/scripts/bootstrap.min.js')
+		
+		script(src='./js/loader.js')
+		// script(src='./js/parallax.js')
+		script(src='./js/tab.js') 
+		script(src='./js/scroll.js') 
+		script(src='./vendor/scripts/smoothscroll.js')
+		
